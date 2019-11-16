@@ -22,8 +22,31 @@
 
   /* typography */
   --font-size: 15px;
+  --font-size-title: calc(--font-size * (5 / 3));
   --font-family: 'Poppins', sans-serif;
   --font-weight-extra-light: 200;
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
+}
+
+.title {
+    font-size: var(--font-size-title);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-extra-light);
+    color: var(--neutral-grayish-blue);
+}
+
+.bolder {
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--neutral-dark-blue);
+}
+
+.d-block {
+    display: block;
+}
+
+.paragraph {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--neutral-grayish-blue);
 }
