@@ -22,6 +22,7 @@
 
   /* typography */
   --font-size: 15px;
+  --font-size-small-title: calc(var(--font-size) * (7 / 5));
   --font-size-title: calc(var(--font-size) * (5 / 3));
   --font-family: 'Poppins', sans-serif;
   --font-weight-extra-light: 200;
@@ -85,4 +86,22 @@
   top: 0;
   left: 0;
   content: " ";
+}
+
+.card-title {
+    margin-bottom: 6px;
+    font-size: var(--font-size-small-title);
+    font-family: var(--font-family);
+    color: var(--neutral-dark-blue);
+}
+
+.card-paragraph {
+    font-size: calc(var(--font-size) - 2px);
+    font-family: var(--font-family);
+    color: var(--neutral-grayish-blue);
+}
+
+.card-img {
+    float: right;
+    margin-top: 40px;
 }
