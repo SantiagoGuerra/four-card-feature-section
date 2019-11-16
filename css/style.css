@@ -22,11 +22,17 @@
 
   /* typography */
   --font-size: 15px;
-  --font-size-title: calc(--font-size * (5 / 3));
+  --font-size-title: calc(var(--font-size) * (5 / 3));
   --font-family: 'Poppins', sans-serif;
   --font-weight-extra-light: 200;
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
+}
+
+.header {
+  max-width: var(--mobile);
+  width: 100%;
+  margin: 60px auto;
 }
 
 .title {
@@ -34,6 +40,7 @@
     font-family: var(--font-family);
     font-weight: var(--font-weight-extra-light);
     color: var(--neutral-grayish-blue);
+    margin-bottom: 16px;
 }
 
 .bolder {
@@ -49,4 +56,14 @@
     font-size: var(--font-size);
     font-family: var(--font-family);
     color: var(--neutral-grayish-blue);
+}
+
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.center-text {
+  text-align: center;;
 }
