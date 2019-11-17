@@ -119,3 +119,14 @@
     float: right;
     margin-top: 40px;
 }
+
+@media screen and (min-width: 1010px) {
+  .header {
+    max-width: 500px;
+    margin: 60px auto;
+  }
+
+  .title {
+    font-size: calc(var(--font-size-title) + 10px);
+  }
+}
