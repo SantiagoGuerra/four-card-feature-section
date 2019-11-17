@@ -99,6 +99,10 @@
   background: var(--primary-orange);
 }
 
+.blue-line::before {
+  background: var(--primary-blue);
+}
+
 .card-title {
     margin-bottom: 6px;
     font-size: var(--font-size-small-title);
