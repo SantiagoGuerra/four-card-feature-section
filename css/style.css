@@ -80,12 +80,19 @@
 
 .line::before {
   position: absolute;
-  background: var(--primary-cyan);
   height: 4px;
   width: 100%;
   top: 0;
   left: 0;
   content: " ";
+}
+
+.cyan-line::before {
+  background: var(--primary-cyan);
+}
+
+.red-line::before {
+  background: var(--primary-red);
 }
 
 .card-title {
